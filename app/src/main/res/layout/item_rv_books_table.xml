@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/click_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rv_item_selector"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <com.fedor.pavel.library.view.ProportionalImageView
+        android:id="@+id/item_rv_booksTable_imvCover"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/books" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="#a62c3131"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/item_rv_booksTable_tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            tools:text="Гарри поттер и философский камень" />
+
+        <RatingBar
+            android:id="@+id/item_rv_booksTable_rbBooks"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBakGround"
+    tools:context="com.fedor.pavel.library.BookFullInfoActivity">
+
+
+    <com.fedor.pavel.library.view.CanSwipeScrollView
+        android:id="@+id/activity_full_bookInfo_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_full_bookInfo_tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                tools:text="Title"
+                android:textColor="@color/colorAccent"
+                />
+
+            <RatingBar
+                android:id="@+id/activity_full_bookInfo_rbBooks"
+                style="?android:attr/ratingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/activity_full_bookInfo_tvTitle"
+                android:stepSize="1.0" />
+
+            <com.fedor.pavel.library.view.ProportionalImageView
+                android:id="@+id/activity_full_bookInfo_imvCover"
+                android:layout_width="180dp"
+                android:layout_below="@id/activity_full_bookInfo_rbBooks"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/activity_full_bookInfo_tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/activity_full_bookInfo_imvCover"
+                android:textSize="16sp"
+                tools:text="description"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+        </RelativeLayout>
+
+    </com.fedor.pavel.library.view.CanSwipeScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

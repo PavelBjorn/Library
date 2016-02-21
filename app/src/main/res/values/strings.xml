@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="activity_books_table_rbAlphabet">Sort by alphabet</string>
+    <string name="activity_books_table_rbRating">Sort by rating</string>
+</resources>
